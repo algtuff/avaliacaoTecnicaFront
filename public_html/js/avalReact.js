@@ -238,7 +238,7 @@ class VisualizarProjeto extends React.Component{
             }).then(response=>{
                 return response.json();
             }).then((totalHoras)=>{
-                document.querySelector('#totalHoras').innerHTML = 'Total de horas trabalhadas - '+(totalHoras.total)?totalHoras.total:0;
+                document.querySelector('#totalHoras').innerHTML = 'Total de horas trabalhadas - '+((totalHoras.total)?totalHoras.total:0);
            });
        }
         
