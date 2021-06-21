@@ -238,14 +238,14 @@ class VisualizarProjeto extends React.Component{
             }).then(response=>{
                 return response.json();
             }).then((totalHoras)=>{
-                document.querySelector('#totalHoras').innerHTML = (totalHoras.total)?totalHoras.total:0;
+                document.querySelector('#totalHoras').innerHTML = 'Total de horas trabalhadas - '+(totalHoras.total)?totalHoras.total:0;
            });
        }
         
         return (
             <div>
                 <h1>Projeto - {projeto.nmProjeto}</h1>
-                <h3>Total de horas trabalhadas - <span id='totalHoras'>0</span></h3>
+                <h3><span id='totalHoras'></span></h3>
                 <table id='tabelaHoras'>
                 </table>
                 <br/>

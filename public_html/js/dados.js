@@ -68,7 +68,7 @@ listaProjeto.map((projeto)=>{
 });
 
 listaProjetoUsuarioHoras.map((projetoUsuarioHoras)=>{
-    fetch('http://localhost:8080/avaliacaoTecnicaBack/projetoUsuarioHoras',{
+    fetch('http://localhost:8080/avaliacaoTecnicaBack/apontarHoras',{
         cache: "no-cache",
         credentials: "same-origin",
         method: 'POST',
